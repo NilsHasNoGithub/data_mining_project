@@ -1,0 +1,19 @@
+1. install rust (using rustup): https://www.rust-lang.org/tools/install
+2. install rust nightly using rustup:
+   Type in a console:
+   	rustup install nightly
+3. if you are running linux (windows or mac go to 4):
+   navigate to the project directory and run the build_linux.sh script:
+   	    sh ./build_linux.sh
+   go to 9
+---------------
+4. navigate to the knn_rust directory:
+   	    from that directory, type in a console:
+	    	 cargo +nightly build --release --all-features
+5. navigate to (win: knn_rust\target\release, mac: knn_rust/target/release)
+6. copy (win: libknn_rust.dll, mac: libknn_rust.dylib) to the knn_python directory
+7. mac: rename libknn_rust.dylib to knn_rust.so
+8. win: rename libknn_rust.dll to knn_rust.pyd
+9. now you are finished, you should be able to run main.py or test tests.py
+
+	
