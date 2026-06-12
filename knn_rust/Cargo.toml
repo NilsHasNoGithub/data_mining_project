@@ -17,7 +17,7 @@ crate-type = ["cdylib"]
 
 [dependencies.pyo3]
 optional = true
-version = "0.8.5"
+version = "0.29.0"
 features = ["extension-module"]
 
 [target.x86_64-apple-darwin]
